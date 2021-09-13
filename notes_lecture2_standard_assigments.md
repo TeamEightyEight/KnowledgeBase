@@ -33,7 +33,7 @@ You have 2 kinds of loop:
 
 - *evolution loop*: in the game when one player make an action, the framework return some values for each sensor. Then controller calculate the fitness completely at the end of the game, when a stop criterion is reached
 
-  ![image-20210909091953969](C:\Users\peppe\AppData\Roaming\Typora\typora-user-images\image-20210909091953969.png)
+  ![image-20210909091953969](res/fitness.png)
 
   where: 
 
@@ -130,4 +130,4 @@ Two types of plot:
 
 For each of 10 runs, you have one best solution. So you take it and test 5 times to test the deviation of each controller.
 
-![image-20210909100208311](C:\Users\peppe\AppData\Roaming\Typora\typora-user-images\image-20210909100208311.png)
+![image-20210909100208311](res/10-runs.png)
