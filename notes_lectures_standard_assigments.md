@@ -131,3 +131,39 @@ Two types of plot:
 For each of 10 runs, you have one best solution. So you take it and test 5 times to test the deviation of each controller.
 
 ![image-20210909100208311](res/10-runs.png)
+
+### Lecture 3 - 14/09/21
+
+#### About Plots
+
+There is a **neural network** called `demo_controller`in the project, which output are the actions like left, right, jump, etc..
+
+The structure of the *neural network* is composed by 1 hidden layer in the middle which contain some **weights** supposed to be optimized. So the weights are supposed to be the the *individuals* of the population.
+
+After the execution, you have to produce the following plots.
+
+##### Line plot
+
+The 1st plot show the evolution during each generation concerning the mean of the *min* and *max* value of the fitness for each generation. 
+
+The mean is computed between the values of each round, because of some randomness in Evolutionary processes. The number of rounds should be 10.
+
+There should be a plot for each enemy and one for each EA (2 in our case). The 3 enemy are chosen randomly. The 2 different EA can change also only in the parameters (increasing the mutation or disable something).
+
+You can use mutation and crossover from DEAP library.
+
+![image-20210914091524241](res\plot1.png)
+
+##### Box plot
+
+For the 2nd plot you are supposed to draw box-plots.
+
+You have to calculate the *best* value for run in each population (based on the fitness value)
+
+Then you have a population of bests, and you have to select one best of them. You need to do this for each population in each run.
+
+ ![image-20210914095550870](res\plot2.png)
+
+##### Environment
+
+You can use *python3*. You need to change the file `tmx.py` at line 81, with `for c in list(tag)`.
