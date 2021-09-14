@@ -152,7 +152,7 @@ There should be a plot for each enemy and one for each EA (2 in our case). The 3
 
 You can use mutation and crossover from DEAP library.
 
-![image-20210914091524241](res\plot1.png)
+![image-20210914091524241](res/plot1.png)
 
 ##### Box plot
 
@@ -162,7 +162,7 @@ You have to calculate the *best* value for run in each population (based on the 
 
 Then you have a population of bests, and you have to select one best of them. You need to do this for each population in each run.
 
- ![image-20210914095550870](res\plot2.png)
+ ![image-20210914095550870](res/plot2.png)
 
 ##### Environment
 
